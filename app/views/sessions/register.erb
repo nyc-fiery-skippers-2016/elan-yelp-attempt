@@ -1,0 +1,13 @@
+<h1>Sign up for an account on Elp!</h1>
+
+<form id="register-form" action="/register" method="post">
+  <input type="text" name="user[first_name]" placeholder="First Name">
+  <input type="text" name="user[last_name]" placeholder="Last Name">
+  <% if params?( params ) == '' %>
+    <input type="text" name="user[email]" placeholder="Email">
+  <% else %>
+    <input type="text" name="user[email]" value="<%= params?( params ) %>">
+  <% end %>
+  <input type="password" name="user[password]" placeholder="Password">
+  <input type="submit" value="Register">
+</form>

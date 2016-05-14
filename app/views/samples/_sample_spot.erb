@@ -1,0 +1,9 @@
+<div class="sample-place">
+  <a href="<%= @random_place.id %>"><%= @random_place.name %></a>
+  <form class="sample-place-review" action="/reviews" method="post">
+    <input type="hidden" name="place[place_id]" value="<%= @random_place.id %>">
+    <input type="hidden" name="place[user_id]" value="<%= current_user.id %>">
+    <input class="sample-review-input" type="text" name="place[body]" placeholder="start a review on this place here">
+    <input class="sample-review-submit" type="submit" value="Review!">
+  </form>
+</div>

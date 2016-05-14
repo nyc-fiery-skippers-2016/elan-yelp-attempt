@@ -1,0 +1,14 @@
+<h1>Welcome To Elp</h1>
+<h3>Please login below</h3>
+
+<% if @errors %>
+  <p>
+    <%= @errors %>
+  </p>
+<% end %>
+
+<form id="login-form" action="/login" method="post">
+  <input type="text" name="user[email]" placeholder="Email">
+  <input type="password" name="user[password]" palceholder="Password">
+  <input type="submit" value="Login">
+</form>

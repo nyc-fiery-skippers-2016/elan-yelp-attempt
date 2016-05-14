@@ -1,0 +1,12 @@
+<% restaurants.each_with_index do | restaurant, idx | %>
+<td>
+  <div class="place-info">
+    <p class="place-title-num"><%= idx + 1 %>.</p>
+    <a class="place-title" href="restaurant/<%= restaurant.id %>"><%= restaurant.name %></a>
+    <p>Reviewed <%= restaurant.reviews.count %> times!</p>
+    <p><%= restaurant.reviews.first.body %></p>
+    <p>Review By - <%= get_user_of_review( restaurant.reviews.first.user_id ) %></p>
+  </div>
+  <% break if idx == 4 %>
+</td>
+<% end %>

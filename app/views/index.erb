@@ -1,0 +1,45 @@
+<div id="outer-container">
+  <div id="main-content">
+    <h3 class="sample-review-header">Your review awaits</h3>
+    <p>
+      Here are some suggestions to get you started.
+    </p>
+
+    <% if logged_in? %>
+      <%= erb :'/samples/_sample_spot' %>
+    <% else %>
+      <%= erb :'/samples/_sample_spot_unregistered_user' %>
+    <% end %>
+
+    <div class="best-of">
+      <h3 class="best-of-title">Best of Elp</h3>
+
+      <div class="best-of-container-nav">
+        <nav class="category-nav">
+          <a class="type-title selected" href="restaurant">Restaurants</a>
+          <a class="type-title" href="clubs">Clubs</a>
+          <a class="type-title" href="lounges">Lounges</a>
+          <a class="type-title" href="bars">Bars</a>
+        </nav>
+
+        <div class="best-of-container">
+          <div class="best-of-restaurants">
+            <table class='active restaurant'>
+              <tr class="restaurants">
+                <%= erb :'/reviews/_restaurant_generator' %>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="elan-picks">
+    <h3>Elp's Picks</h3>
+
+    <ul>
+      <%= erb :'/places/_elp_picks' %>
+    </ul>
+  </aside>
+</div>

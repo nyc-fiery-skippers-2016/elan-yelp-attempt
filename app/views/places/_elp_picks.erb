@@ -1,0 +1,8 @@
+<% Place.all.shuffle.each_with_index do | place, idx | %>
+  <li>
+    <p><%= idx + 1 %>.</p>
+    <a href="/<%= place.place_type %>/<%= place.id %>"><%= place.name %></a>
+    <span><%= place.reviews.first.body %></span>
+  </li>
+  <% break if idx == 6 %>
+<% end %>

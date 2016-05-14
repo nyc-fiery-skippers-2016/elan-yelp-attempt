@@ -1,0 +1,150 @@
+div#outer-container {
+  width: 60%;
+  margin: auto;
+}
+
+div#main-content {
+  width: 55%;
+  float: left;
+}
+
+h3.sample-review-header {
+  font-size: 24px;
+  color: #c41200;
+}
+
+div.sample-place {
+  background-color: #fdf5d6;
+  border: 1px solid #fc0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 510px;
+}
+
+div.sample-place a {
+  color: #3b65a7;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+.sample-review-input {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #999;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sample-review-submit {
+  border: 0.5px solid;
+  border-color: #861202;
+  color: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  background-color: #d90007;
+  padding: 5px 8px;
+  font-size: 14px;
+  line-height: 1.5em;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-left: 85.3%;
+}
+
+
+h3.best-of-title {
+  font-size: 24px;
+  color: #c41200;
+}
+
+.best-of-container {
+  border-top: 1px solid #ccccc8;
+  border-left: 1px solid #ccccc8;
+  padding: 5px;
+  float: left;
+  width: 350px;
+}
+
+nav.category-nav {
+  position: relative;
+  z-index: 1000;
+  float: left;
+  width: 175px;
+  background-color: #f5f5f1;
+}
+
+.type-title {
+  display: block;
+  padding: 7px 6px 5px;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid #e5e5e1;
+  text-decoration: none;
+}
+
+.selected {
+  border-right: none;
+  background-color: #fff;
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.place-title-num {
+  display: inline;
+}
+
+.place-info {
+  margin-left: 40px;
+  margin-top: 15px;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+.place-title {
+  color: #3b65a7;
+}
+
+td {
+  display: block;
+}
+
+aside.elan-picks {
+  float: left;
+  border-left: 1px solid #000;
+  margin-top: 110px;
+  margin-left: 50px;
+  padding-left: 50px;
+  width: 300px;
+}
+
+aside.elan-picks h3 {
+  text-align: center;
+}
+
+aside.elan-picks ul {
+  list-style: none;
+}
+
+aside.elan-picks ul li {
+  padding: 10px;
+}
+
+aside.elan-picks ul li a {
+  color: #3b65a7;
+}
+
+aside.elan-picks ul li p {
+  display: inline;
+}
+
+aside.elan-picks ul li span {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
